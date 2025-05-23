@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Einsatzprotokoll</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f9ff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+      color: #d00000;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      background-color: #d00000;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a80000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Schulsanitätsdienst</h1>
+    <button onclick="location.href='protokoll-erstellen.html'">📝 Einsatzprotokoll erstellen</button>
+    <button onclick="location.href='protokolle-anzeigen.html'">🔍 Einsatzprotokolle suchen/anzeigen</button>
+  </div>
+</body>
+</html>
