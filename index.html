@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login Beispiel</title>
+</head>
+<body>
+  <h2>Login</h2>
+  <input id="username" placeholder="Benutzername" />
+  <input id="password" type="password" placeholder="Passwort" />
+  <button onclick="login()">Anmelden</button>
+  <p id="message" style="color:red;"></p>
+
+<script>
+  const users = {
+    "mustermann.max": "geheim123",
+    "test": "12345"
+    "roitsch.finn" : "#Fi5ccwg"
+  };
+
+  function login() {
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value;
+
+    if(users[username] && users[username] === password) {
+      document.getElementById("message").style.color = "green";
+      document.getElementById("message").textContent = "Login erfolgreich!";
+      // Hier kannst du z.B. auf eine andere Seite weiterleiten:
+      // window.location.href = "dashboard.html";
+    } else {
+      document.getElementById("message").style.color = "red";
+      document.getElementById("message").textContent = "Benutzername oder Passwort falsch!";
+    }
+  }
+</script>
+</body>
+</html>
